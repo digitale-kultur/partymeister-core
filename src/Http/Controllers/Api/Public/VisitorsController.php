@@ -2,7 +2,7 @@
 
 namespace Partymeister\Core\Http\Controllers\Api\Public;
 
-use Motor\Backend\Http\Controllers\PublicApiController;
+use Motor\Backend\Http\Controllers\ApiController;
 use Partymeister\Core\Services\VisitorService;
 use Partymeister\Core\Http\Resources\Public\VisitorCollection;
 
@@ -11,7 +11,7 @@ use Partymeister\Core\Http\Resources\Public\VisitorCollection;
  *
  * @package Partymeister\Core\Http\Controllers\Api\Public
  */
-class VisitorsController extends PublicApiController
+class VisitorsController extends ApiController
 {
     protected string $model = 'Partymeister\Core\Models\Visitor';
 
