@@ -37,7 +37,7 @@ class SlidesController extends Controller
         $data = $resource->toArrayRecursive();
 
         foreach (Arr::get($data, 'events') as $key => $event) {
-			if(!$event->is_visible) continue;
+			if(!Arr::get($event, 'is_visible')) continue;
 
             $date = Carbon::createFromTimestamp(strtotime(Arr::get($event, 'starts_at')));
             if (! isset($days[$date->format('l')])) {
