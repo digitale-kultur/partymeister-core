@@ -9,7 +9,7 @@ use Partymeister\Core\Services\VisitorService;
 /**
  * Class VisitorsController
  */
-class VisitorsController extends ApiController
+class VisitorsController extends PublicApiController
 {
     protected string $model = 'Partymeister\Core\Models\Visitor';
 
